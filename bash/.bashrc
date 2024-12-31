@@ -24,6 +24,12 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+# aliases 
+open() {
+    xdg-open "${1:-.}"
+}
+alias cat=bat
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/wizard/mambaforge/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
