@@ -21,7 +21,7 @@ corner_radius 10
 xwayland enable
 
 # WIP: Set the default scale for Xwayland
-output * scale 2
+output * scale 1.5
 # Fcitx5 thing
 exec --no-startup-id fcitx5
 
