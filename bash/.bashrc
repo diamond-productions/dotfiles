@@ -30,7 +30,7 @@ open() {
     xdg-open "${1:-.}"
 }
 alias cat=bat
-
+alias tree="tree -a -I '.git' "
 export DOTFILES="$HOME/.dotfiles"
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

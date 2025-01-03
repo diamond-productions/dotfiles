@@ -3,9 +3,9 @@ vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 
 -- init file calls other files in the lua directory
-require('options') 
+require('options')
 require('keymaps')
-require('plugins')
+require('plugins-init')
 require('colorscheme')
 require('lsp')
 
