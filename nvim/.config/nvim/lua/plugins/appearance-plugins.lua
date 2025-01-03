@@ -1,3 +1,4 @@
+-- https://dotfyle.com/neovim/colorscheme/trending
 -- Themes and colorscheme
 return {
     {
