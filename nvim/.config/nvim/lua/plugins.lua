@@ -44,6 +44,14 @@ require("lazy").setup({
 		"L3MON4D3/LuaSnip",
 		version = "v2.*",
 	},
+-- comment and uncomment code easily
+    {
+        'numToStr/Comment.nvim',
+        opts = {
+            -- add any options here
+        }
+    },
+
     -- nvim-tree
     {
     
@@ -54,7 +62,7 @@ require("lazy").setup({
         "nvim-tree/nvim-web-devicons",
       },
       config = function()
-        require("nvim-tree").setup {}
+        require("config.nvim-tree")
       end,
     },
     -- Typst Preview

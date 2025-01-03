@@ -24,12 +24,14 @@ if [ -d ~/.bashrc.d ]; then
 fi
 unset rc
 
+
 # aliases 
 open() {
     xdg-open "${1:-.}"
 }
 alias cat=bat
 
+export DOTFILES="$HOME/.dotfiles"
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/wizard/mambaforge/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
@@ -49,4 +51,12 @@ if [ -f "/home/wizard/mambaforge/etc/profile.d/mamba.sh" ]; then
 fi
 # <<< conda initialize <<<
 
-. "$HOME/.cargo/env"
+# initialize fzf (fuzzy finder) 
+eval "$(fzf --bash)"
+
+
+if [ -f "$HOME/.cargo/env" ]; then
+    # Source the Rust environment setup if rustup is installed
+    . "$HOME/.cargo/env"
+fi
+
