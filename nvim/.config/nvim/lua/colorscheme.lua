@@ -1,6 +1,6 @@
--- Set the colorscheme to tokyonight using a protected call
+-- Set the colorscheme  using a protected call
 -- in case it isn't installed
-local status, _ = pcall(vim.cmd, "colorscheme bluloco-dark ")
+local status, _ = pcall(vim.cmd, "colorscheme gruvbox")
 
 if not status then
     print("Colorscheme not found!") -- Print an error message if the colorscheme is not installed

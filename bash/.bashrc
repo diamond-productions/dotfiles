@@ -29,9 +29,12 @@ unset rc
 open() {
     xdg-open "${1:-.}"
 }
+
 alias cat=bat
 alias tree="tree -a -I '.git' "
 export DOTFILES="$HOME/.dotfiles"
+alias lg=lazygit
+alias cg="conda activate"
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/wizard/mambaforge/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"

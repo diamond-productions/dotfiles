@@ -6,6 +6,7 @@ vim.g.loaded_netrwPlugin = 1
 require('options')
 require('keymaps')
 require('plugins-init')
+-- Script to choose colortheme safely
 require('colorscheme')
 require('lsp')
 
