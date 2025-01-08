@@ -35,6 +35,7 @@ alias tree="tree -a -I '.git' "
 export DOTFILES="$HOME/.dotfiles"
 alias lg=lazygit
 alias cg="conda activate"
+alias lg="lazygit"
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/wizard/mambaforge/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
@@ -63,3 +64,9 @@ if [ -f "$HOME/.cargo/env" ]; then
     . "$HOME/.cargo/env"
 fi
 
+
+# Add current git branch and status
+if [ -f "$HOME/.bash-git-prompt/gitprompt.sh" ]; then
+    GIT_PROMPT_ONLY_IN_REPO=1
+    source "$HOME/.bash-git-prompt/gitprompt.sh"
+fi

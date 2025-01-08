@@ -10,7 +10,7 @@ require('mason').setup({
 
 require('mason-lspconfig').setup({
     -- A list of servers to automatically install if they're not already installed
-    ensure_installed = { 'pylsp', 'julials', 'solidity',  'solidity_ls' ,'bashls' , 'tinymist' },
+    ensure_installed = { 'pylsp', 'julials', 'bashls' , 'tinymist' },
 })
 -- Set different settings for different languages' LSP
 -- LSP list: https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
@@ -75,25 +75,20 @@ end
 -- 2. Add configuration below.
 lspconfig.pylsp.setup({
       on_attach = on_attach,
+      settings = {
+          pylsp = {
+              plugins = { 
+                  pycodestyle = {enabled = false}
+              }
+          }
+      }
+      
 })
 
 lspconfig.gopls.setup({
 	on_attach = on_attach,
 })
 
---solidity-ls
-lspconfig.solidity.setup({
-  -- on_attach = on_attach, -- probably you will need this.
-  -- capabilities = capabilities,
-  settings = {
-    -- example of global remapping
-    solidity = {
-        includePath = '',
-        -- Array of paths to pass as --allow-paths to solc
-        allowPaths = {}
-    }
-  },
-})
 
 
 -- bash language server
