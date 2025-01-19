@@ -1,0 +1,16 @@
+# .bash_alias
+# Function Definitions
+open() {
+    xdg-open "${1:-.}"
+}
+# Aliases
+alias cat=bat
+alias tree="tree -a -I '.git' "
+export DOTFILES="$HOME/.dotfiles"
+alias lg=lazygit
+alias cg="conda activate"
+alias lg="lazygit"
+if [ "$TERM" = "xterm-kitty" ]; then
+    alias ssh="kitten ssh"
+fi
+

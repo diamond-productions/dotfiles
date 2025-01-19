@@ -34,8 +34,14 @@ vim.keymap.set('v', '>', '>gv', opts)
 vim.keymap.set('n','<leader>e' , ':NvimTreeToggle<cr>' , opts)
 
 -- Keymap for reloading the configuration
-vim.api.nvim_set_keymap('n', '<leader><leader>', ':source $MYVIMRC<CR>', opts)
+vim.api.nvim_set_keymap('n', '<leader>r', ':source $MYVIMRC<CR>', opts)
 
 -- Keymap to launch LazyGit in a floating window
 vim.keymap.set('n', '<leader>gg' , ':LazyGit<CR>' , opts)
+
+-- Telescope
+vim.keymap.set('n', '<M-C-F>' , ':Telescope find_files<CR>' , opts)
+vim.keymap.set('n', '<C-f>' , ':Telescope current_buffer_fuzzy_find<CR>' , opts)
+vim.keymap.set('n', '<leader>f' , ':Telescope buffers<CR>' , opts)
+vim.keymap.set('n', '<M-C-P>' , ':Telescope<CR>' , opts)
 
