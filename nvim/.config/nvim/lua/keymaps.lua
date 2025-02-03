@@ -44,4 +44,6 @@ vim.keymap.set('n', '<M-C-F>' , ':Telescope find_files<CR>' , opts)
 vim.keymap.set('n', '<C-f>' , ':Telescope current_buffer_fuzzy_find<CR>' , opts)
 vim.keymap.set('n', '<leader>f' , ':Telescope buffers<CR>' , opts)
 vim.keymap.set('n', '<M-C-P>' , ':Telescope<CR>' , opts)
+vim.keymap.set('n', '<M-C-T>' , ':Telescope colorscheme<CR>' , opts)
+
 

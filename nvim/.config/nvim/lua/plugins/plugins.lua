@@ -32,6 +32,9 @@ return {
     -- comment and uncomment code easily
     {
         'numToStr/Comment.nvim',
+        config = function()
+            require('Comment').setup()
+        end,
         opts = {
             -- add any options here
         }
@@ -146,6 +149,13 @@ return {
             }
         end,
     },
+    {
+        'numToStr/Comment.nvim',
+        opts = {
+            -- add any options here
+        }
+    },
+
     -- lazygit.nvim
     {
         "kdheepak/lazygit.nvim",
