@@ -1,0 +1,34 @@
+# # = White
+# ## = blurb: A modified version of Gruvbox with softer contrasts
+# Unmapped settings = 
+# background_image_layout = cscaled
+#clone_source_strategies = venv,conda,env_var,path
+# cursor_text_color = background
+#editor = nvim
+# include = current-theme.conf
+# tab_bar_style = slant
+# tab_powerline_style = angled
+background = #32302f
+background-opacity = 1
+cursor-color = #a89984
+font-family = Daddy Time Mono Nerd Font
+font-size = 12.0
+foreground = #d4be98
+palette = 0=#665c54
+palette = 10=#a9b665
+palette = 11=#d8a657
+palette = 12=#7daea3
+palette = 13=#d3869b
+palette = 14=#89b482
+palette = 15=#d4be98
+palette = 1=#ea6962
+palette = 2=#a9b665
+palette = 3=#e78a4e
+palette = 4=#7daea3
+palette = 5=#d3869b
+palette = 6=#89b482
+palette = 7=#d4be98
+palette = 8=#928374
+palette = 9=#ea6962
+selection-background = #d4be98
+selection-foreground = #32302f

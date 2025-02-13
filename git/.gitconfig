@@ -3,3 +3,7 @@
 	email = ozdiamond@outlook.co.il
 [core]
 	editor = nvim
+[merge]
+	tool = vimdiff
+[mergetool]
+	path = nvim
